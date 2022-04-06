@@ -4,9 +4,9 @@
   <project name="LineageOS/android_device_asus_Z01R" path="device/asus/Z01R" remote="github" revision="lineage-19.1"/>
 
   <!-- kernel -->
-  <project name="5z-devs/android_kernel_asus_sdm845" path="kernel/asus/sdm845" remote="github" revision="lineage-19.0"/>
+  <project name="LineageOS/android_kernel_asus_sdm845" path="kernel/asus/sdm845" remote="github" revision="lineage-19.1"/>
 
   <!-- vendor -->
-  <project name="5z-devs/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="lineage-19.1"/>
+  <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="lineage-19.1"/>
 
 </manifest>
