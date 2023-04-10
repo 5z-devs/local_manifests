@@ -10,24 +10,24 @@ Also please note that repopick.sh isn't always updated. Please check LineageOS G
 
 Starting from zero:
 ---------
-    mkdir -p ~/android/lineage-19.1
-    cd ~/android/lineage-19.1
-    repo init -u git://github.com/LineageOS/android.git -b lineage-19.1
+    mkdir -p ~/android/lineage-20
+    cd ~/android/lineage-20
+    repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
     mkdir -p .repo/local_manifests
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-19.1/asus.xml > .repo/local_manifests/asus.xml
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-20/asus.xml > .repo/local_manifests/asus.xml
     repo sync
 
 If you've already synced Lineage-Sources:
 ----------
     mkdir -p .repo/local_manifests
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-19.1/asus.xml > .repo/local_manifests/asus.xml
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-20/asus.xml > .repo/local_manifests/asus.xml
     repo sync
 
 Building
 ----------
     cd ~/android/lineage
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-19.1/Z01R_clean_build.sh > Z01R_clean_build.sh
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-19.1/Z01R_dirty_build.sh > Z01R_dirty_build.sh
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-20/Z01R_clean_build.sh > Z01R_clean_build.sh
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-20/Z01R_dirty_build.sh > Z01R_dirty_build.sh
     ./Z01R_clean_build.sh // for Z01R clean builds
     ./Z01R_dirty_build.sh // for Z01R dirty builds
 
