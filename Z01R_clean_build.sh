@@ -16,8 +16,9 @@ source build/envsetup.sh
 
 # clean the out dir; comment out, if you want to do
 # a dirty build
+breakfast lineage_Z01R-ap1a-userdebug
 make -j9 ARCH=arm clean
 
 # fire up the building process and also log stdout
 # and stderrout
-brunch lineage_Z01R-userdebug 2>&1 | tee Z01R_make.log
+brunch lineage_Z01R-ap1a-userdebug 2>&1 | tee Z01R_make.log
