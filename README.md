@@ -8,24 +8,24 @@ Also please note that repopick.sh isn't always updated. Please check LineageOS G
 
 Starting from zero:
 ---------
-    # cd into your ROM's folder (IE, from scratch I would mkdir -p ~/android/lineage-21 && cd ~/android/lineage-21)
-    repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+    # cd into your ROM's folder (IE, from scratch I would mkdir -p ~/android/lineage-22.2 && cd ~/android/lineage-22.2)
+    repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
     mkdir -p .repo/local_manifests
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-21/asus.xml > .repo/local_manifests/asus.xml
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-22.2/asus.xml > .repo/local_manifests/asus.xml
     repo sync
 
 If you've already synced Lineage-Sources:
 ----------
     # cd into your ROM's folder
     mkdir -p .repo/local_manifests
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-21/asus.xml > .repo/local_manifests/asus.xml
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-22.2/asus.xml > .repo/local_manifests/asus.xml
     repo sync
 
 Building
 ----------
     # cd into your ROM's folder
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-21/Z01R_clean_build.sh > Z01R_clean_build.sh
-    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-21/Z01R_dirty_build.sh > Z01R_dirty_build.sh
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-22.2/Z01R_clean_build.sh > Z01R_clean_build.sh
+    curl https://raw.githubusercontent.com/5z-devs/local_manifests/lineage-22.2/Z01R_dirty_build.sh > Z01R_dirty_build.sh
     ./Z01R_clean_build.sh // for Z01R clean builds
     ./Z01R_dirty_build.sh // for Z01R dirty builds
 
